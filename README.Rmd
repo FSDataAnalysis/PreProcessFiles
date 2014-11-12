@@ -1,0 +1,43 @@
+---
+title: "PreProcess files"
+author: "S Santos"
+date: "Thursday, November 06, 2014"
+output: html_document
+---
+
+# Introduction:
+
+This code is to make multiple single files from a single txt file. 
+
+
+The code can be found [here](https://github.com/FSDataAnalysis/PreProcessFiles)  into the format: 
+
+
+ZEx =1 ; DfEx =3; ZRet = 4;  DfRet = 6; AEx =7 ;  ARet =8 ; PEx =9 ;  PRet =10;
+
+
+# STEPS:
+
+
+1. Place file intofolder **FolderExample**.
+
+2. Run the **PreProcessFiles.m** file. 
+
+3. The first option is for processing extension or retraction curves. 
+
+4. The second is to organize from "the shift option in Asylum Research style", see below.
+
+
+# Details
+
+* The files have to be saved as txt files with tabulators acting as separators. However the files can be saved one by one, i.e. curve by curve, or many curves in the same file. 
+
+* If many curves are saved in the same file they should be saved one after the other in the format above. If many curves are saved in the same file you need to select the *option Process Files (0/1)=1*
+
+* If curves are saved one by one the option is *option Process Files (0/1)=0*
+
+* If the format is not correct you will have an error. The only other format accepted is that where the Cypher (Asulym Research) allows saving many files at once in a format where the first curve is as above and then the rows are zc, def and then Amplitude and Phase consecutively (shift example) 
+
+**Examples of accepted data can be found in the folder EXAMPLE_DATA**:
+
+In [this repository.](https://github.com/FSDataAnalysis/ExamplesOfAMAFMdata)
